@@ -15,7 +15,7 @@ All data is stored in the browser’s **localStorage**.
 ```bash
 npm install
 ng serve
-
+```
 
 
 ## UI Preview
