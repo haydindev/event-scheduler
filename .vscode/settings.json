@@ -1,0 +1,6 @@
+{
+    "editor.renderWhitespace": "selection",
+    "workbench.tree.renderIndentGuides": "onHover",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.hover.sticky": true
+}

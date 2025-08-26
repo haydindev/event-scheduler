@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="card mt-3">
+
+        <div class="row">
+            <h2 class="text-center">Create New Event</h2>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-5">
+                <input class="form-control" [(ngModel)]="newEventTitle" type="text" placeholder="Event title">
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" [(ngModel)]="newEventDate" type="date" placeholder="Date">
+            </div>
+
+            <div class="col-md-3">
+                <input class="form-control" [(ngModel)]="newEventTime" type="time" placeholder="Time">
+            </div>
+
+            <div>
+                <textarea class="form-control" [(ngModel)]="newEventDescription" placeholder="Description"></textarea>
+            </div>
+
+            <div>
+                <button class="btn btn-primary w-100" (click)="addEvent()">Add</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-center mt-5">Events</h2>
+
+
+    <ul class="list-group mt-3">
+        <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let event of events; index as i">
+            {{event.title}} {{event.date | date:'dd.MM.yyyy'}} {{event.time}} {{event.description}}
+
+            <button class="btn btn-danger" (click)="deleteEvent(i)">Delete</button>
+
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+</div>
